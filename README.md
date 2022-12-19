@@ -16,4 +16,4 @@ Grid Layout. Flexbox-вёрстка. Адаптивная верстка.
 
 **GitHub Pages**
 
-
+https://oksanakam.github.io/russian-travel/index.html
