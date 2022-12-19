@@ -1,0 +1,16 @@
+.header__lang-link_active {
+    width: 30px;
+    height: 28px;
+    text-decoration-line: underline;
+}
+
+.header__lang-link_active:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 320px) {
+    .header__lang-link_active {
+        width: 22px;
+        height: 20px; 
+    }
+}

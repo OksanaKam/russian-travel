@@ -1,0 +1,25 @@
+.place__heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    column-gap: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .place__heading {
+        column-gap: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .place__heading {
+        column-gap: 28px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .place__heading {
+        flex-wrap: wrap;
+    }
+}

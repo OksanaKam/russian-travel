@@ -1,0 +1,39 @@
+.place__paragraph {
+    max-width: 484px;
+    margin: 26px 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+    color: #FFFFFF;
+}
+
+.place__paragraph:first-of-type {
+    margin-top: 48px;
+}
+
+@media screen and (max-width: 1024px) {
+    .place__paragraph {
+        max-width: 456px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .place__paragraph {
+        max-width: 352px;
+        font-size: 16px;
+        margin: 25px 0 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .place__paragraph {
+        max-width: 288px;
+        font-size: 16px;
+        margin: 25px 0 0;
+    }
+
+    .place__paragraph:first-of-type {
+        margin-top: 32px;
+    }
+}

@@ -1,0 +1,25 @@
+.two-columns {
+    width: 100%;
+    display: flex;
+    column-gap: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .two-columns {
+        column-gap: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .two-columns {
+        column-gap: 28px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .two-columns {
+        flex-direction: column;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+}
