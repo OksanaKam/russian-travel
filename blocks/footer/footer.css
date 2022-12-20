@@ -30,7 +30,6 @@
         margin-top: 64px;
         flex-direction: column;
         row-gap: 48px;
-        padding-left: 16px;
-        padding-right: 118px;
+        margin-left: 16px;
     }
 }
