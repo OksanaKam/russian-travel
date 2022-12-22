@@ -1,6 +1,5 @@
 .photo-grid {
-    width: 1184px;
-    height: 671px;
+    max-width: 1184px;
     margin: 92px auto 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -8,22 +7,33 @@
     gap: 16px;
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+    .photo-grid {
+        max-width: calc(928px + (1184 - 928) * (100vw - 1024px) / (1280 - 1024));
+        gap: calc(14px + (16 - 14) * (100vw - 1024px) / (1280 - 1024));
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .photo-grid {
-        width: 928px;
-        height: 100%;
-        /*height: 942px;*/
+        max-width: 928px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
         gap: 14px;
     }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .photo-grid {
+        max-width: calc(720px + (928 - 720) * (100vw - 768px) / (1024 - 768));
+        margin-top: calc(88px + (92 - 88) * (100vw - 768px) / (1024 - 768));
+        gap: calc(16px + (14 - 16) * (100vw - 768px) / (1024 - 768));
+    }
+}
+
 @media screen and (max-width: 768px) {
     .photo-grid {
-        width: 720px;
-        height: 100%;
-        /*height: 1664px;*/
+        max-width: 720px;
         margin: 88px auto 0;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -31,11 +41,17 @@
     }
 }
 
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .photo-grid {
+        max-width: calc(288px + (720 - 288) * (100vw - 320px) / (768 - 320));
+        margin-top: calc(64px + (88 - 64) * (100vw - 320px) / (768 - 320));
+        gap: calc(12px + (16 - 12) * (100vw - 320px) / (768 - 320));
+    }
+}
+
 @media screen and (max-width: 320px) {
     .photo-grid {
-        width: 288px;
-        height: 100%;
-        /*height: 2724px;*/
+        max-width: 288px;
         margin: 64px auto 0;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 1fr);

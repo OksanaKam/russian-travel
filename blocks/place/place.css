@@ -14,6 +14,12 @@
     }
 }
 
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .place__paragraph:first-of-type {
+        margin-top: calc(50px + (73 - 50) * (100vw - 320px) / (768 - 320));
+    }
+}
+
 @media screen and (max-width: 320px) {
     .place {
         margin-top: 50px;

@@ -1,6 +1,5 @@
 .lead__caption {
-    width: 158px;
-    height: 14px;
+    max-width: 158px;
     margin-top: 8px;
     margin-bottom: 0;
     font-weight: 400;
@@ -14,6 +13,12 @@
 @media screen and (max-width: 768px) {
     .lead__caption {
         margin-left: 24px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .lead__caption {
+        margin-left: calc(16px + (24 - 16) * (100vw - 320px) / (768 - 320));
     }
 }
 

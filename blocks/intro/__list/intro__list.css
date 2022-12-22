@@ -1,7 +1,6 @@
 .intro__list {
-    width: 690px;
-    height: 90px;
-    margin: 33px auto 0;
+    max-width: 690px;
+    margin: 33px 0 0;
 }
 
 .list {
@@ -11,12 +10,19 @@
 
 @media screen and (max-width: 768px) {
     .intro__list {
-        width: 720px; 
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .intro__list {
+        max-width: calc(288px + (720 - 288) * (100vw - 320px) / (768 - 320));
     }
 }
 
 @media screen and (max-width: 320px) {
     .intro__list {
-        width: 288px;
+        max-width: 288px;
+        margin-top: 34px;
     }
 }

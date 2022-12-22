@@ -1,6 +1,6 @@
 .cover {
-    width: 1184px;
-    height: 740px;
+    max-width: 1184px;
+    aspect-ratio: 8 / 5;
     margin: 92px auto 0;
     display: flex;
     flex-direction: column;
@@ -9,29 +9,29 @@
     overflow: hidden;
 }
 
-.cover:hover {
-    opacity: 0.8;
-}
-
 @media screen and (max-width: 1024px) {
     .cover {
-        width: 1024px;
-        height: 640px;
+        max-width: 1024px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .cover {
-        width: 768px;
-        height: 480px;
+        max-width: 768px;
         margin: 90px auto 0;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .cover {
+        max-width: calc(320px + (768 - 320) * (100vw - 320px) / (768 - 320));
+        margin-top: calc(66px + (90 - 66) * (100vw - 320px) / (768 - 320));
     }
 }
 
 @media screen and (max-width: 320px) {
     .cover {
-        width: 320px;
-        height: 200px;
-        margin: 66px auto 0;
+        max-width: 320px;
+        margin-top: 66px;
     }
 }

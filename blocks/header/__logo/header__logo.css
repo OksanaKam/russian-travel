@@ -3,6 +3,13 @@
     height: 52px;
 }
 
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .header__logo {
+        width: calc(142px + (176 - 142) * (100vw - 320px) / (768 - 320));
+        height: calc(42px + (52 - 42) * (100vw - 320px) / (768 - 320));
+    }
+}
+
 @media screen and (max-width: 320px) {
     .header__logo {
         width: 142px;

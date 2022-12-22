@@ -1,23 +1,40 @@
 .place__website {
-    width: 456px;
-    height: 46px;
+    max-width: 456px;
     display: flex;
-    margin-bottom: 0;
+    margin: 0;
     flex-direction: column;
     row-gap: 12px;
-    align-self:flex-end;
 }
 
 @media screen and (max-width: 768px) {
     .place__website {
-        width: 352px;
-        margin: 0;
+        max-width: 352px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .place__website {
+        max-width: 50%; 
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .place__website {
+        width: 90%;
+        margin: 32px auto 0;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 498px) {
+    .place__website {
+        max-width: calc(288px + (352 - 288) * (100vw - 320px) / (499 - 320));
     }
 }
 
 @media screen and (max-width: 320px) {
     .place__website {
-        width: 288px;
+        width: 100%;
+        max-width: 288px;
         margin: 32px 16px 0;
     }
 }

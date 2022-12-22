@@ -9,6 +9,13 @@
     color: #FFFFFF;
 }
 
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .header__lang-link {
+        width: calc(22px + (29 - 22) * (100vw - 320px) / (768 - 320));
+        height: calc(20px + (28 - 20) * (100vw - 320px) / (768 - 320));
+    }
+}
+
 @media screen and (max-width: 320px) {
     .header__lang-link {
         width: 22px;

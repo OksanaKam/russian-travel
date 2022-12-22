@@ -8,21 +8,3 @@
     -moz-text-size-adjust: 100%;
     background: #2A2C2F;
 }
-
-@media screen and (max-width: 1024px) {
-    .page {
-        width: 1024px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .page {
-        width: 768px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .page {
-        width: 320px;
-    }
-}

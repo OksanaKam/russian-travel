@@ -3,3 +3,9 @@
     flex-direction: column;
     justify-content: flex-start;
 }
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .two-columns__main {
+        width: 50%;
+    }
+}

@@ -7,3 +7,7 @@
     position: absolute;
     z-index: 1;
 }
+
+.cover__overlay:hover {
+    opacity: 0.8;
+}

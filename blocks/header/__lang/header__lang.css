@@ -8,9 +8,14 @@
     padding: 0;
 }
 
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .header__lang {
+        margin-top: calc(14px + (18 - 14) * (100vw - 320px) / (768 - 320));
+    }
+}
+
 @media screen and (max-width: 320px) {
     .header__lang {
         margin-top: 14px;
-        margin-bottom: 6px;
     }
 }
