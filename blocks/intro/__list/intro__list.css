@@ -3,11 +3,6 @@
     margin: 33px 0 0;
 }
 
-.list {
-    list-style: none;
-    padding: 0;
-}
-
 @media screen and (max-width: 768px) {
     .intro__list {
         max-width: 720px;

@@ -1,23 +1,7 @@
 .header__lang-link_active {
-    width: 30px;
-    height: 28px;
     text-decoration-line: underline;
 }
 
 .header__lang-link_active:hover {
     opacity: 0.8;
-}
-
-@media screen and (min-width: 321px) and (max-width: 767px) {
-    .header__lang-link_active {
-        width: calc(22px + (30 - 22) * (100vw - 320px) / (768 - 320));
-        height: calc(20px + (28 - 20) * (100vw - 320px) / (768 - 320));
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .header__lang-link_active {
-        width: 22px;
-        height: 20px;
-    }
 }

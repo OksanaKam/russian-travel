@@ -2,11 +2,6 @@
     max-width: 1184px;
     aspect-ratio: 8 / 5;
     margin: 92px auto 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {

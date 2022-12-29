@@ -1,25 +1,15 @@
 .header__lang-link {
-    width: 29px;
-    height: 28px;
     font-style: normal;
     font-size: 24px;
     line-height: 28px;
     font-weight: 400;
     text-align: right;
     color: #FFFFFF;
-}
-
-@media screen and (min-width: 321px) and (max-width: 767px) {
-    .header__lang-link {
-        width: calc(22px + (29 - 22) * (100vw - 320px) / (768 - 320));
-        height: calc(20px + (28 - 20) * (100vw - 320px) / (768 - 320));
-    }
+    text-decoration-line: none;
 }
 
 @media screen and (max-width: 320px) {
     .header__lang-link {
-        width: 22px;
-        height: 20px;
         font-size: 18px;
         line-height: 20px;
     }

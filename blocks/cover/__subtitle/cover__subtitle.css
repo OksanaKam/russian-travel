@@ -6,12 +6,9 @@
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+    text-decoration: none;
     color: #FFFFFF;
     z-index: 2;
-}
-
-.cover__subtitle:hover~.cover__overlay {
-    opacity: 0.8;
 }
 
 @media screen and (min-width: 321px) and (max-width: 767px) {
